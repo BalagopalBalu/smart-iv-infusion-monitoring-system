@@ -199,9 +199,6 @@ These are proposed enhancements unless explicitly implemented and validated in t
 **Balagopal M S**  
 Electronics and Communication Engineering — Data Science
 
-**Gokulakrishna G**  
-Electronics and Communication Engineering
-
 SRM Institute of Science and Technology, Ramapuram
 
 **Course:** Microprocessor, Microcontroller and Interfacing Techniques — 21ECC301P
