@@ -209,7 +209,3 @@ SRM Institute of Science and Technology, Ramapuram
 ## Disclaimer
 
 This project is developed for **academic learning, demonstration, and research purposes only**. It is not a certified medical device and has not been clinically validated. It must not be used to make clinical decisions or to monitor or control an actual patient's IV infusion.
-
-## License
-
-No license has been specified yet. If you intend to permit public reuse or modification, consider adding an appropriate open-source license after confirming the terms you want to use.
