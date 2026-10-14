@@ -1,0 +1,9 @@
+{
+  "esp_port": "COM7",
+  "uno_port": "COM4",
+  "esp_baud": 115200,
+  "uno_baud": 9600,
+  "camera_url": "http://10.116.77.242:81/stream",
+  "low_weight_limit_g": 150.0,
+  "auto_connect": true
+}

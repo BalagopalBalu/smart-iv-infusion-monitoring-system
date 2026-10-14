@@ -1,0 +1,554 @@
+[
+  {
+    "time": "2026-10-14T00:33:38+05:30",
+    "kind": "system",
+    "message": "ESP32-CAM serial connected on COM7",
+    "value": null
+  },
+  {
+    "time": "2026-10-14T00:33:40+05:30",
+    "kind": "system",
+    "message": "Arduino UNO connected on COM4",
+    "value": null
+  },
+  {
+    "time": "2026-10-14T00:35:41+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 1",
+    "value": 1
+  },
+  {
+    "time": "2026-10-14T00:35:41+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:1 to Arduino UNO",
+    "value": 1
+  },
+  {
+    "time": "2026-10-14T00:37:13+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 2",
+    "value": 2
+  },
+  {
+    "time": "2026-10-14T00:37:13+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:2 to Arduino UNO",
+    "value": 2
+  },
+  {
+    "time": "2026-10-14T00:37:19+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 3",
+    "value": 3
+  },
+  {
+    "time": "2026-10-14T00:37:19+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:3 to Arduino UNO",
+    "value": 3
+  },
+  {
+    "time": "2026-10-14T00:37:21+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 4",
+    "value": 4
+  },
+  {
+    "time": "2026-10-14T00:37:21+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:4 to Arduino UNO",
+    "value": 4
+  },
+  {
+    "time": "2026-10-14T00:39:12+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 5",
+    "value": 5
+  },
+  {
+    "time": "2026-10-14T00:39:12+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:5 to Arduino UNO",
+    "value": 5
+  },
+  {
+    "time": "2026-10-14T00:39:16+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 6",
+    "value": 6
+  },
+  {
+    "time": "2026-10-14T00:39:16+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:6 to Arduino UNO",
+    "value": 6
+  },
+  {
+    "time": "2026-10-14T00:39:16+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 7",
+    "value": 7
+  },
+  {
+    "time": "2026-10-14T00:39:16+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:7 to Arduino UNO",
+    "value": 7
+  },
+  {
+    "time": "2026-10-14T00:41:48+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 8",
+    "value": 8
+  },
+  {
+    "time": "2026-10-14T00:41:48+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:8 to Arduino UNO",
+    "value": 8
+  },
+  {
+    "time": "2026-10-14T00:41:49+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 9",
+    "value": 9
+  },
+  {
+    "time": "2026-10-14T00:41:49+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:9 to Arduino UNO",
+    "value": 9
+  },
+  {
+    "time": "2026-10-14T00:41:49+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 10",
+    "value": 10
+  },
+  {
+    "time": "2026-10-14T00:41:49+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:10 to Arduino UNO",
+    "value": 10
+  },
+  {
+    "time": "2026-10-14T00:42:44+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 11",
+    "value": 11
+  },
+  {
+    "time": "2026-10-14T00:42:44+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:11 to Arduino UNO",
+    "value": 11
+  },
+  {
+    "time": "2026-10-14T00:42:54+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 12",
+    "value": 12
+  },
+  {
+    "time": "2026-10-14T00:42:54+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:12 to Arduino UNO",
+    "value": 12
+  },
+  {
+    "time": "2026-10-14T00:42:57+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 13",
+    "value": 13
+  },
+  {
+    "time": "2026-10-14T00:42:57+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:13 to Arduino UNO",
+    "value": 13
+  },
+  {
+    "time": "2026-10-14T00:43:00+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 14",
+    "value": 14
+  },
+  {
+    "time": "2026-10-14T00:43:00+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:14 to Arduino UNO",
+    "value": 14
+  },
+  {
+    "time": "2026-10-14T00:43:38+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 15",
+    "value": 15
+  },
+  {
+    "time": "2026-10-14T00:43:38+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:15 to Arduino UNO",
+    "value": 15
+  },
+  {
+    "time": "2026-10-14T00:44:22+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 16",
+    "value": 16
+  },
+  {
+    "time": "2026-10-14T00:44:22+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:16 to Arduino UNO",
+    "value": 16
+  },
+  {
+    "time": "2026-10-14T00:44:26+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 17",
+    "value": 17
+  },
+  {
+    "time": "2026-10-14T00:44:26+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:17 to Arduino UNO",
+    "value": 17
+  },
+  {
+    "time": "2026-10-14T00:44:34+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 18",
+    "value": 18
+  },
+  {
+    "time": "2026-10-14T00:44:34+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:18 to Arduino UNO",
+    "value": 18
+  },
+  {
+    "time": "2026-10-14T00:44:56+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 19",
+    "value": 19
+  },
+  {
+    "time": "2026-10-14T00:44:56+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:19 to Arduino UNO",
+    "value": 19
+  },
+  {
+    "time": "2026-10-14T00:45:11+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 20",
+    "value": 20
+  },
+  {
+    "time": "2026-10-14T00:45:11+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:20 to Arduino UNO",
+    "value": 20
+  },
+  {
+    "time": "2026-10-14T00:46:30+05:30",
+    "kind": "system",
+    "message": "ESP32-CAM serial connected on COM7",
+    "value": null
+  },
+  {
+    "time": "2026-10-14T00:46:32+05:30",
+    "kind": "system",
+    "message": "Arduino UNO connected on COM4",
+    "value": null
+  },
+  {
+    "time": "2026-10-14T00:46:37+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 1",
+    "value": 1
+  },
+  {
+    "time": "2026-10-14T00:46:37+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:1 to Arduino UNO",
+    "value": 1
+  },
+  {
+    "time": "2026-10-14T00:46:47+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 2",
+    "value": 2
+  },
+  {
+    "time": "2026-10-14T00:46:47+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:2 to Arduino UNO",
+    "value": 2
+  },
+  {
+    "time": "2026-10-14T00:46:48+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 3",
+    "value": 3
+  },
+  {
+    "time": "2026-10-14T00:46:48+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:3 to Arduino UNO",
+    "value": 3
+  },
+  {
+    "time": "2026-10-14T00:46:49+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 4",
+    "value": 4
+  },
+  {
+    "time": "2026-10-14T00:46:49+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:4 to Arduino UNO",
+    "value": 4
+  },
+  {
+    "time": "2026-10-14T00:46:50+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 5",
+    "value": 5
+  },
+  {
+    "time": "2026-10-14T00:46:50+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:5 to Arduino UNO",
+    "value": 5
+  },
+  {
+    "time": "2026-10-14T00:46:52+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 6",
+    "value": 6
+  },
+  {
+    "time": "2026-10-14T00:46:52+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:6 to Arduino UNO",
+    "value": 6
+  },
+  {
+    "time": "2026-10-14T00:46:53+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 7",
+    "value": 7
+  },
+  {
+    "time": "2026-10-14T00:46:53+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:7 to Arduino UNO",
+    "value": 7
+  },
+  {
+    "time": "2026-10-14T00:46:55+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 8",
+    "value": 8
+  },
+  {
+    "time": "2026-10-14T00:46:55+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:8 to Arduino UNO",
+    "value": 8
+  },
+  {
+    "time": "2026-10-14T00:46:55+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 9",
+    "value": 9
+  },
+  {
+    "time": "2026-10-14T00:46:55+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:9 to Arduino UNO",
+    "value": 9
+  },
+  {
+    "time": "2026-10-14T00:46:59+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 10",
+    "value": 10
+  },
+  {
+    "time": "2026-10-14T00:46:59+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:10 to Arduino UNO",
+    "value": 10
+  },
+  {
+    "time": "2026-10-14T00:47:00+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 11",
+    "value": 11
+  },
+  {
+    "time": "2026-10-14T00:47:00+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:11 to Arduino UNO",
+    "value": 11
+  },
+  {
+    "time": "2026-10-14T00:47:02+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 12",
+    "value": 12
+  },
+  {
+    "time": "2026-10-14T00:47:02+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:12 to Arduino UNO",
+    "value": 12
+  },
+  {
+    "time": "2026-10-14T00:47:04+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 13",
+    "value": 13
+  },
+  {
+    "time": "2026-10-14T00:47:04+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:13 to Arduino UNO",
+    "value": 13
+  },
+  {
+    "time": "2026-10-14T00:47:05+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 14",
+    "value": 14
+  },
+  {
+    "time": "2026-10-14T00:47:05+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:14 to Arduino UNO",
+    "value": 14
+  },
+  {
+    "time": "2026-10-14T00:50:19+05:30",
+    "kind": "system",
+    "message": "ESP32-CAM serial connected on COM7",
+    "value": null
+  },
+  {
+    "time": "2026-10-14T00:50:21+05:30",
+    "kind": "system",
+    "message": "Arduino UNO connected on COM4",
+    "value": null
+  },
+  {
+    "time": "2026-10-14T00:51:09+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 16",
+    "value": 16
+  },
+  {
+    "time": "2026-10-14T00:51:09+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:16 to Arduino UNO",
+    "value": 16
+  },
+  {
+    "time": "2026-10-14T00:51:11+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 17",
+    "value": 17
+  },
+  {
+    "time": "2026-10-14T00:51:11+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:17 to Arduino UNO",
+    "value": 17
+  },
+  {
+    "time": "2026-10-14T00:51:12+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 18",
+    "value": 18
+  },
+  {
+    "time": "2026-10-14T00:51:12+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:18 to Arduino UNO",
+    "value": 18
+  },
+  {
+    "time": "2026-10-14T00:51:14+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 19",
+    "value": 19
+  },
+  {
+    "time": "2026-10-14T00:51:14+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:19 to Arduino UNO",
+    "value": 19
+  },
+  {
+    "time": "2026-10-14T00:51:15+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 20",
+    "value": 20
+  },
+  {
+    "time": "2026-10-14T00:51:15+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:20 to Arduino UNO",
+    "value": 20
+  },
+  {
+    "time": "2026-10-14T00:54:42+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 21",
+    "value": 21
+  },
+  {
+    "time": "2026-10-14T00:54:42+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:21 to Arduino UNO",
+    "value": 21
+  },
+  {
+    "time": "2026-10-14T00:54:46+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 22",
+    "value": 22
+  },
+  {
+    "time": "2026-10-14T00:54:46+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:22 to Arduino UNO",
+    "value": 22
+  },
+  {
+    "time": "2026-10-14T00:56:48+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 23",
+    "value": 23
+  },
+  {
+    "time": "2026-10-14T00:56:48+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:23 to Arduino UNO",
+    "value": 23
+  },
+  {
+    "time": "2026-10-14T00:57:26+05:30",
+    "kind": "drop",
+    "message": "IV drop detected \u2014 count 24",
+    "value": 24
+  },
+  {
+    "time": "2026-10-14T00:57:26+05:30",
+    "kind": "relay",
+    "message": "Forwarded COUNT:24 to Arduino UNO",
+    "value": 24
+  }
+]

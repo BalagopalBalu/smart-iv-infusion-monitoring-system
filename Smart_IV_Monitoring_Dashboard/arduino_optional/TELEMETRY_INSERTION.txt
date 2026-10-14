@@ -1,0 +1,14 @@
+OPTIONAL UNO TELEMETRY INSERTION
+
+Do not flash a replacement sketch. Preserve the working UNO sketch.
+
+After the existing code computes the current estimated weight and low-weight condition, add equivalent output using the variable names from your sketch:
+
+Serial.print("TELEMETRY:weight=");
+Serial.print(estimatedWeight, 1);
+Serial.print(",status=");
+Serial.print(lowWeight ? "LOW_WEIGHT" : "NORMAL");
+Serial.print(",count=");
+Serial.println(dropCount);
+
+Replace estimatedWeight, lowWeight and dropCount with the actual names in your sketch. Emit this about once per second (using a millis() interval) rather than on every loop iteration. The Python dashboard expects 9600 baud on COM4.

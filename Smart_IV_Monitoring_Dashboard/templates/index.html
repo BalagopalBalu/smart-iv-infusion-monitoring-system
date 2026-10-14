@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart IV | Monitoring Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">IV</div>
+      <div><div class="brand-title">Smart IV</div><div class="brand-subtitle">INFUSION MONITORING SYSTEM</div></div>
+    </div>
+    <div class="header-right">
+      <span class="local-pill"><span class="pulse"></span> LOCAL DASHBOARD</span>
+      <span id="clock" class="clock">--:--:--</span>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="welcome-row">
+      <div>
+        <p class="eyebrow">DEVICE OVERVIEW</p>
+        <h1>Monitoring dashboard</h1>
+        <p class="muted">Live prototype telemetry from ESP32-CAM and Arduino UNO.</p>
+      </div>
+      <div class="system-state"><span id="systemDot" class="state-dot"></span><div><strong id="systemStatus">Connecting…</strong><small id="lastUpdated">Waiting for data</small></div></div>
+    </section>
+
+    <section class="metrics">
+      <article class="metric-card">
+        <div class="metric-head"><span>Detected drops</span><span class="metric-icon blue">↘</span></div>
+        <div class="metric-value" id="dropCount">—</div>
+        <div class="metric-foot"><span class="live-dot"></span><span id="lastDrop">Waiting for first drop event</span></div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-head"><span>Estimated remaining weight</span><span class="metric-icon cyan">◉</span></div>
+        <div class="metric-value"><span id="weightValue">—</span><span class="unit">g</span></div>
+        <div class="metric-foot"><span id="weightBadge" class="status-badge neutral">Awaiting telemetry</span></div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-head"><span>Infusion status</span><span class="metric-icon green">✓</span></div>
+        <div class="metric-value status-value" id="infusionStatus">WAITING</div>
+        <div class="metric-foot muted" id="thresholdText">Low-weight threshold: 150 g</div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-head"><span>Hardware link</span><span class="metric-icon violet">⌁</span></div>
+        <div class="connection-lines"><div><span class="mini-dot" id="espDot"></span><span>ESP32-CAM</span><strong id="espStatus">Disconnected</strong></div><div><span class="mini-dot" id="unoDot"></span><span>Arduino UNO</span><strong id="unoStatus">Disconnected</strong></div></div>
+      </article>
+    </section>
+
+    <section class="main-grid">
+      <article class="panel camera-panel">
+        <div class="panel-heading"><div><h2>Live camera</h2><p>ESP32-CAM stream</p></div><span class="panel-tag"><span class="live-dot"></span> LIVE VIEW</span></div>
+        <div class="camera-stage" id="cameraStage">
+          <div class="camera-empty" id="cameraEmpty"><div class="camera-symbol">▣</div><strong>Connect your camera stream</strong><p>Enter the ESP32-CAM stream URL in settings below. The browser loads the stream directly; this app does not restart the camera.</p></div>
+          <img id="cameraImage" alt="ESP32-CAM live stream" hidden>
+        </div>
+        <div class="camera-footer"><span><span class="live-dot"></span> Camera URL is opened directly by this laptop</span><button class="text-button" id="openCamera">Open stream ↗</button></div>
+      </article>
+      <article class="panel chart-panel">
+        <div class="panel-heading"><div><h2>Drop activity</h2><p>Recent detections · rolling view</p></div><span class="chart-key"><span class="key-dot blue-bg"></span> Drop count</span></div>
+        <div class="chart-wrap"><canvas id="dropChart" aria-label="Drop count chart"></canvas></div>
+        <div class="chart-summary"><div><small>Current count</small><strong id="chartCurrentCount">—</strong></div><div><small>Events logged</small><strong id="eventTotal">0</strong></div><button class="outline-button" id="resetCount">Reset display</button></div>
+      </article>
+    </section>
+
+    <section class="lower-grid">
+      <article class="panel">
+        <div class="panel-heading"><div><h2>Weight trend</h2><p>Available when UNO telemetry is enabled</p></div><span class="chart-key"><span class="key-dot cyan-bg"></span> Weight (g)</span></div>
+        <div class="chart-wrap small-chart"><canvas id="weightChart" aria-label="Weight trend chart"></canvas></div>
+        <p class="hint">If this chart remains empty, the current UNO sketch may not transmit weight telemetry yet. The LCD and existing hardware logic can continue working.</p>
+      </article>
+      <article class="panel alerts-panel">
+        <div class="panel-heading"><div><h2>Alerts & system events</h2><p>Latest status changes</p></div><span id="alertCount" class="count-pill">0 alerts</span></div>
+        <div id="alertsList" class="alerts-list"><div class="empty-state">No alerts recorded yet.</div></div>
+      </article>
+    </section>
+
+    <section class="panel history-panel">
+      <div class="panel-heading history-heading"><div><h2>Event history</h2><p>Drop events, serial relay activity and alerts</p></div><div class="actions"><button class="outline-button" id="refreshHistory">Refresh</button><a class="primary-button" href="/api/export.csv">Export CSV ↓</a></div></div>
+      <div class="table-scroll"><table><thead><tr><th>Time</th><th>Type</th><th>Event</th><th>Value</th></tr></thead><tbody id="historyBody"><tr><td colspan="4" class="empty-cell">Waiting for events…</td></tr></tbody></table></div>
+    </section>
+
+    <details class="panel settings-panel">
+      <summary><span><strong>Connection settings</strong><small>Serial ports, camera stream and alert threshold</small></span><span class="summary-chevron">⌄</span></summary>
+      <div class="settings-grid">
+        <label>ESP32-CAM serial port<input id="espPort" value="COM7" autocomplete="off"></label>
+        <label>Arduino UNO serial port<input id="unoPort" value="COM4" autocomplete="off"></label>
+        <label class="wide">Camera stream URL<input id="cameraUrl" placeholder="http://192.168.1.123:81/stream" autocomplete="off"></label>
+        <label>Low-weight alert threshold (g)<input id="weightLimit" type="number" min="0" step="1" value="150"></label>
+        <div class="settings-actions"><button class="primary-button" id="saveSettings">Save settings</button><span id="settingsMessage" class="settings-message">Settings are stored on this laptop.</span></div>
+      </div>
+      <p class="hint">Use the actual stream URL shown by your CameraWebServer setup. Typical ESP32-CAM examples use port 81 for the stream, but your configured address may differ.</p>
+    </details>
+    <footer>Smart IV prototype · Local-only dashboard · For educational demonstration, not clinical use.</footer>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
